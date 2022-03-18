@@ -16,17 +16,25 @@ map = map2
 current_position_x = 0
 current_position_y = 0
 
-print("current_position_x =", current_position_x)
-print("current_position_y =", current_position_y)
-can_move_right = current_position_x <= 2 and map[current_position_y][current_position_x+1] == 0
-can_move_bottom = current_position_y <= 2 and map[current_position_y+1][current_position_x] == 0
+def move(current_position_x, current_position_y):
+    print("Current step is: ", step)    
+    print("current_position_x =", current_position_x)
+    print("current_position_y =", current_position_y)
+    can_move_right = current_position_x <= 2 and map[current_position_y][current_position_x+1] == 0
+    can_move_bottom = current_position_y <= 2 and map[current_position_y+1][current_position_x] == 0
 
-if can_move_right:
-    print("Should move right")
-    current_position_x = current_position_x + 1
-if can_move_bottom:
-    print("Should move down")
-    current_position_y = current_position_y + 1 
+    if can_move_right:
+        print("Should move right")
+        current_position_x = current_position_x + 1
+    if can_move_bottom:
+        print("Should move down")
+        current_position_y = current_position_y + 1 
+
+
+    return [current_position_x, current_position_y]
+
+new_position = move(1, start_position_x, start_position_y)
+
 
 # 2. step 2
 print("current_position_x =", current_position_x)
