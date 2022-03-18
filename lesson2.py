@@ -18,9 +18,8 @@ current_position_y = 0
 
 print("current_position_x =", current_position_x)
 print("current_position_y =", current_position_y)
-
-can_move_right = map[current_position_y][current_position_x+1] == 0
-can_move_bottom = map[current_position_y+1][current_position_x] == 0
+can_move_right = current_position_x <= 2 and map[current_position_y][current_position_x+1] == 0
+can_move_bottom = current_position_y <= 2 and map[current_position_y+1][current_position_x] == 0
 
 if can_move_right:
     print("Should move right")
@@ -32,9 +31,8 @@ if can_move_bottom:
 # 2. step 2
 print("current_position_x =", current_position_x)
 print("current_position_y =", current_position_y)
-can_move_right = map[current_position_y][current_position_x+1] == 0
-can_move_bottom = map[current_position_y+1][current_position_x] == 0
-
+can_move_right = current_position_x <= 2 and map[current_position_y][current_position_x+1] == 0
+can_move_bottom = current_position_y <= 2 and map[current_position_y+1][current_position_x] == 0
 
 if can_move_right:
     print("Should move right")
@@ -46,9 +44,8 @@ if can_move_bottom:
 # 3. step 3
 print("current_position_x =", current_position_x)
 print("current_position_y =", current_position_y)
-can_move_right = map[current_position_y][current_position_x+1] == 0
-can_move_bottom = map[current_position_y+1][current_position_x] == 0
-
+can_move_right = current_position_x <= 2 and map[current_position_y][current_position_x+1] == 0
+can_move_bottom = current_position_y <= 2 and map[current_position_y+1][current_position_x] == 0
 
 if can_move_right:
     print("Should move right")
@@ -59,9 +56,8 @@ if can_move_bottom:
 # 4. step 4
 print("current_position_x =", current_position_x)
 print("current_position_y =", current_position_y)
-can_move_right = map[current_position_y][current_position_x+1] == 0
-can_move_bottom = map[current_position_y+1][current_position_x] == 0
-
+can_move_right = current_position_x <= 2 and map[current_position_y][current_position_x+1] == 0
+can_move_bottom = current_position_y <= 2 and map[current_position_y+1][current_position_x] == 0
 
 if can_move_right:
     print("Should move right")
@@ -72,9 +68,8 @@ if can_move_bottom:
 #step 5. step 5
 print("current_position_x =", current_position_x)
 print("current_position_y =", current_position_y)
-can_move_right = map[current_position_y][current_position_x+1] == 0
-can_move_bottom = map[current_position_y+1][current_position_x] == 0
-
+can_move_right = current_position_x <= 2 and map[current_position_y][current_position_x+1] == 0
+can_move_bottom = current_position_y <= 2 and map[current_position_y+1][current_position_x] == 0
 
 if can_move_right:
     print("Should move right")
@@ -85,9 +80,8 @@ if can_move_bottom:
 #step 6. step 6
 print("current_position_x =", current_position_x)
 print("current_position_y =", current_position_y)
-can_move_right = map[current_position_y][current_position_x+1] == 24
-can_move_bottom = map[current_position_y+1][current_position_x] == 0
-
+can_move_right = current_position_x <= 2 and map[current_position_y][current_position_x+1] == 24
+can_move_bottom = current_position_y <= 2 and map[current_position_y+1][current_position_x] == 0
 
 if can_move_right:
     print("Should move right")
